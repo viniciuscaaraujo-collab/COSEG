@@ -499,13 +499,6 @@ const leaders=[
   {nome:'Vinicius Nunes',ini:'VN', total:15, sem:[0,0,6,8], bg:'#e6f2ea',fg:'#1a6030'},
   {nome:'Yane',          ini:'YA', total:0,  sem:[0,0,0,0], bg:'#eaece8',fg:'#6a8a6c'},
 ];
-const leaders=[
-  {nome:'Alberth',       ini:'AB', total:0, sem:[0,0,0], bg:'#eaece8',fg:'#6a8a6c'},
-  {nome:'Kauã',          ini:'KA', total:0, sem:[0,0,0], bg:'#eaece8',fg:'#6a8a6c'},
-  {nome:'Laura',         ini:'LR', total:2, sem:[0,2,0], bg:'#e6f2ea',fg:'#1a6030'},
-  {nome:'Vinicius Nunes',ini:'VN', total:6, sem:[0,0,6], bg:'#e6f2ea',fg:'#1a6030'},
-  {nome:'Yane',          ini:'YA', total:0, sem:[0,0,0], bg:'#eaece8',fg:'#6a8a6c'},
-];
 document.getElementById('metaGrid').innerHTML=leaders.map(l=>{
   const pct=Math.min(100,Math.round(l.total/META_MES*100));
   const mc=l.total>=META_MES?'#1a6030':l.total>=8?'#b06a00':'#c0392b';
